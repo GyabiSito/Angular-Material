@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <span>AppUsers</span>
+    <div class="example-spacer"></div>
+    @for (item of menu; track $index) {
+        <button mat-button [routerLink]="item.redirect">{{item.nombre}}</button>
+    }
+    <div class="example-spacer"></div>
+    <button mat-icon-button routerLink="/logout">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>  

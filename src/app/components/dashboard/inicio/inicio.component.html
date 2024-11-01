@@ -1,0 +1,32 @@
+<div class="container">
+    <mat-toolbar>
+        <span>Dashboard</span>
+    </mat-toolbar>
+<div class="flex">
+
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+            <mat-card-title>Total Usuarios</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            {{totalUsers.total}}
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+            <mat-card-title>Total Masculinos</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            {{totalUsers.totalMen}}
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+            <mat-card-title>Total Femeninos</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            {{totalUsers.totalWomen}}
+        </mat-card-content>
+    </mat-card>
+</div>
+</div>
